@@ -3,4 +3,5 @@ The given project is a simplifies version of Byzantine Fault Tolerance agreement
 
 # Commands to run
   javac GameController.java
+  
   java GameController
