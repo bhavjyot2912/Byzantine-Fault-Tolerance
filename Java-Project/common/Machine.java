@@ -58,5 +58,5 @@ public abstract class Machine extends Thread {
 		moveSleep = step;
 	}
 	
-	private static int moveSleep = 500;
+	private static int moveSleep = 2000;
 }

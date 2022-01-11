@@ -108,7 +108,7 @@ public class Machine_0116 extends Machine {
             for (int i = 0; i < machines.size(); i++) {
                 if (faulty.contains(i) == false)
                 {
-                    machines.get(i).sendMessage(id, phaseNum, 0, 1);
+                    machines.get(i).sendMessage(id, phaseNum, 0, 0);
                     /* if(faisla == 0)
                         machines.get(i).sendMessage(id, phaseNum, 0, 1);
                     else
@@ -116,7 +116,7 @@ public class Machine_0116 extends Machine {
                 }
                 else if(faulty.contains(i) == true)
                 {
-                    machines.get(i).sendMessage(id, phaseNum, 0, 0);
+                    machines.get(i).sendMessage(id, phaseNum, 0, faisla);
                     //machines.get(i).sendMessage(id, phaseNum, 0, faisla);
                 }
 
@@ -160,7 +160,7 @@ public class Machine_0116 extends Machine {
             if (l_after_round1 + r_after_round1 >= 2 * numFaulty + 1) {
                 if (isCorrect == false) 
                 {
-                    this.decision = random.nextInt(2);
+                    this.decision = random.nextInt(3) - 1;
                 } 
                 else if (isCorrect == true) 
                 {

@@ -4,8 +4,9 @@ import common.Game;
 import common.Location;
 import common.Machine;
 
-import demo.Game_0116;
-import demo.Machine_0116;
+import demo.*;
+//import demo.Game_0116;
+//import demo.Machine_0116;
 
 public class GameController {
 
@@ -27,15 +28,15 @@ public class GameController {
 		// Add as many as you would like, and change numFaults accordingly (but less than 1/3 of total machines)
 		
 		machines.add(new Machine_0116());
-		machines.add(new Machine_0116());
-		machines.add(new Machine_0116());
-		machines.add(new Machine_0116());
-		machines.add(new Machine_0116());
+		machines.add(new Machine_0001());
+		machines.add(new Machine_0015());
+		machines.add(new Machine_0506(0));
+		machines.add(new Machine_0059());
 		machines.add(new Machine_0116());
 		machines.add(new Machine_0116());
 		
 		// change the following as needed
-		int numFaults = 0;
+		int numFaults = 2;
 		int stepSize = 4;
 		int dispTime = 200;
 		Machine.setMoveStep(500);
